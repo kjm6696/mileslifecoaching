@@ -12,6 +12,118 @@ body{
     width: 100%;
     height: 1000px;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero {
+    background-color: #d3d3d3; /* Same grey background */
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the hero */
+    border: none; /* No round corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.hero h1 {
+    font-family: "Italianno", cursive;
+    font-size: 2.5rem; /* Adjust header size */
+    margin-bottom: 10px; /* Space below the header */
+    color: black; /* Header color */
+}
+
+.hero p {
+    font-family: "Forum", serif;
+    font-size: 1.2rem; /* Adjust paragraph size */
+    color: black; /* Paragraph color */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.hero .cta-button {
+    font-family: "Forum", serif; /* Same button font */
+    background-color: #E0B930; /* Button background */
+    color: white; /* Button text color */
+    padding: 12px 24px; /* Button padding */
+    font-size: 1.2rem; /* Button font size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Transition effect */
+    text-decoration: none; /* Remove underline */
+}
+
+.hero .cta-button:hover {
+    background-color: #d1a825; /* Darker shade on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.pricing-card {
+    font-family: 'Forum', serif;
+    background-color: #d3d3d3; /* Lighter grey background */
+    width: 300px;
+    height: 400px; /* Taller rectangle */
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+    border: none; /* No round corners */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(164, 164, 164); /* Black outline */
+}
+
+.pricing-card img {
+    border-radius: 50%; /* Circle image */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style-type: disc;
+    text-align: left;
+    padding: 0;
+}
+
+.pricing-card li {
+    margin: 10px 0;
+    margin-left: 8%;
+}
+
+.pricing-card button {
+    font-family: "Forum", serif;
+    background-color: #E0B930;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.pricing-card button:hover {
+    background-color: #d1a825; /* Darker shade on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .pricing-card {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
 
 @keyframes fadeInAnimation {
     0% {

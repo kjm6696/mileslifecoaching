@@ -10,7 +10,7 @@ body{
 
 .container{
     width: 100%;
-    height: 1000px;
+    height: 1200px;
 }
 
 @keyframes fadeInAnimation {
@@ -22,3 +22,50 @@ body{
         opacity: 1;
     }
 }
+
+.container {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #E0B930;
+    text-align: center;
+    font-size: 5rem; /* Adjust font size as needed */
+    padding: 1rem;
+    -webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .btn {
+    font-family: "Forum", serif;
+    background-color: #E0B930; /* Primary button color */
+    color: white; /* Button text color */
+    padding: 12px 24px; /* Padding around the button */
+    font-size: 1.9rem; /* Font size */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
+    /* Move button up */
+    position: relative;
+    top: -50px; /* Move up by 50px */
+
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  .btn:hover {
+    background-color: #d1a825; /* Darker shade on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+  }
+  
+  .btn:active {
+    transform: translateY(0); /* Return to normal position when clicked */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+  }

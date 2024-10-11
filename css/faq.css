@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #e6e6e6;
     font-family: "Italianno", cursive;
     font-weight: 400;
@@ -8,16 +8,116 @@ body{
     animation-fill-mode: forwards;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 1000px;
+    padding: 20px;
+    max-width: 800px; /* Center the container */
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #E0B930; /* Button color */
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: "Forum", serif;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+}
+
+.icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+.faq-answer {
+    display: none; /* Hide answers by default */
+    background-color: #d3d3d3; /* Grey background for answers */
+    padding: 10px;
+    font-family: "Forum", serif;
+    border: 1px solid #ccc; /* Add border for better visibility */
+    animation: slideDown 0.5s ease; /* Slide-down effect */
+}
+
+.faq-answer.show {
+    display: block; /* Show answer */
+}
+
+.faq-question:hover {
+    background-color: #d1a825; /* Darker shade on hover */
+}
+
+.icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #E0B930;
+    background-color: #fff; /* Background color for the icon */
+    border-radius: 50%; /* Make the background circular */
+    padding: 5px; /* Add some padding around the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+.faq-question:hover .icon {
+    background-color: #d1a825; /* Change background on hover */
+    color: white; /* Change icon color on hover */
+}
+
+.hero {
+    background-color: #d3d3d3; /* Same grey background */
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the hero */
+    border: none; /* No round corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.hero h1 {
+    font-family: "Italianno", cursive;
+    font-size: 2.5rem; /* Adjust header size */
+    margin-bottom: 10px; /* Space below the header */
+    color: black; /* Header color */
+}
+
+.hero p {
+    font-family: "Forum", serif;
+    font-size: 1.2rem; /* Adjust paragraph size */
+    color: black; /* Paragraph color */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+
+@media (max-width: 800px) {
+    .faq-question {
+        width: 94%;
+    }
+    .faq-answer {
+        width: 90%;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 500px; /* Limit height */
+    }
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }

@@ -8,9 +8,17 @@ body{
     animation-fill-mode: forwards;
 }
 
+p{
+    font-family: "Forum", serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 4rem;
+}
+
 .container{
     width: 100%;
-    height: 1000px;
+    height: 100%;
 }
 
 @keyframes fadeInAnimation {
@@ -20,5 +28,114 @@ body{
 
     100% {
         opacity: 1;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-intro h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #E0B930;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mission-statement h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mission-statement p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.meet-the-coach {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    margin-bottom: 4rem;
+    text-align: left; /* Ensure the text alignment */
+}
+
+.coach-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 2rem; /* Add space between image and text */
+}
+
+.coach-bio {
+    max-width: 600px;
+}
+
+.coach-bio h2 {
+    margin-bottom: 1rem;
+    color: #E0B930;
+}
+
+.coach-bio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cta h2 {
+    margin-bottom: 1.5rem;
+    color: #E0B930;
+}
+
+.cta-button {
+    font-family: "Forum", serif;
+    background-color: #E0B930;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d1a825; /* Darker shade on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 800px) {
+    .meet-the-coach {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .coach-image {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 2rem; /* Add space below image */
+    }
+
+    .coach-bio {
+        max-width: 90%; /* Allow text to take up more width on smaller screens */
     }
 }
