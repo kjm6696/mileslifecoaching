@@ -68,7 +68,7 @@ body {
 }
 
 .faq-question:hover .icon {
-    background-color: #d1a825; /* Change background on hover */
+    background-color: #4c4c4c; /* Change background on hover */
     color: white; /* Change icon color on hover */
 }
 
