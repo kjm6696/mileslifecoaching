@@ -23,7 +23,7 @@ body{
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1130px) {
   .banner-text p {
       display: none; /* Hide banner text on mobile devices */
   }

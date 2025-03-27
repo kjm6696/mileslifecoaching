@@ -33,47 +33,88 @@ body {
 
 .container {
     width: 100%;
-    height: auto; /* Change height to auto for flexibility */
+    height: auto; /* Allow the container to adjust dynamically */
     padding: 20px; /* Add some padding */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Space between left and right content */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add spacing between left and right content */
+    margin: auto;
+    box-sizing: border-box; /* Include padding in the total width */
 }
 
 .left-content {
     font-family: 'Forum', serif;
-    width: 50%;
-    height: auto; /* Change height to auto for flexibility */
+    width: 65%; /* Use percentage for flexible width */
+    height: auto; /* Allow height to adjust dynamically */
     padding: 20px; /* Add some padding */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    margin-top: 135px;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-end; /* Align items to the left */
+    margin-top: 0; /* Remove extra margin to align with the top */
+    box-sizing: border-box; /* Include padding in the total width */
 }
 
 .right-content {
     font-family: 'Forum', serif;
-    width: 10%;
-    height: auto; /* Change height to auto for flexibility */
+    width: 41%; /* Use percentage for flexible width */
+    height: auto; /* Allow height to adjust dynamically */
     padding: 20px; /* Add some padding */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align items to the left */
+    margin: auto;
+    box-sizing: border-box; /* Include padding in the total width */
 }
 
 .post {
+    position: relative; /* Make the post container the reference point for the pseudo-element */
     width: 100%;
-    height: 300px; /* Change height to auto for flexibility */
+    max-width: 1000px;
+    max-height: 335px; /* Default height */
     padding: 20px; /* Add some padding */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(191, 191, 191);
-    margin-bottom: 20px;
+    display: flex; /* Enable flexbox */
+    flex-direction: row; /* Keep image and text side by side */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the top */
+    background-color: rgb(233, 233, 233); /* Background color */
+    margin-bottom: 20px; /* Space between posts */
+    box-sizing: border-box; /* Include padding in the total width/height */
+    gap: 20px; /* Add spacing between the image and content */
+    overflow: hidden; /* Hide overflowing content */
+}
+.post::after {
+    content: ""; /* Add the text for the pseudo-element */
+    position: absolute; /* Position it relative to the .post container */
+    bottom: 0; /* Align it to the bottom */
+    left: 50%; /* Start at the horizontal center */
+    transform: translateX(-50%); /* Center the text horizontally */
+    width: 100%; /* Adjust width to fit the text */
+    height:50%; /* Adjust height to fit the text */
+    text-align: center; /* Center-align the text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 20px;
+    color: rgb(255, 255, 255); /* Set the text color */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(184, 184, 184) 100%); /* Add a subtle gradient background */
+    padding: 25px 10px; /* Add some padding around the text */
+    pointer-events: none; /* Ensure it doesn’t block clicks */
+    z-index: 2; /* Ensure it appears above the gradient */
+}
+
+.post.expanded::after {
+    opacity: 0; /* Hide the gradient when the post is expanded */
+}
+
+.post.expanded {
+    max-height: 1000px; /* Large enough to fit all content */
+    opacity: 1; /* Fully visible */
+}
+
+.post.collapsed {
+    max-height: 335px; /* Collapse back to default height */
+    opacity: 0.8; /* Slight fade-out effect */
 }
 
 .left-content .post {
@@ -82,46 +123,54 @@ body {
 
 /* Target only the parent div */
 .left-content .post:hover {
-    background-color: #d1a825; /* Darker shade on hover */
+    background-color: #d8d8d8; /* Darker shade on hover */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
     transform: translateY(-3px); /* Slight lift effect on hover */
 }
 
 .post-image {
-    display: flex;
-    width: 550px;
-    height: 250px; /* Change height to auto for flexibility */
-    background-color: rgb(122, 122, 122);
+    width: 40%; /* Adjust width as needed */
+    height: auto; /* Allow the height to adjust dynamically */
+    object-fit: cover; /* Ensure the image fits within its container */
+    flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .post-content {
+    width: 60%; /* Adjust width as needed */
+    height: auto; /* Allow the height to adjust dynamically */
+    padding: 0; /* Remove extra padding */
     display: flex;
-    width: 100%;
-    height: 250px; /* Change height to auto for flexibility */
-    padding: 20px; /* Add some padding */
-    flex-direction: column;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align text to the top */
+    box-sizing: border-box; /* Include padding in the total width/height */
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
 .recent-post {
-    width: 100%;
-    height: 300px; /* Change height to auto for flexibility */
+    width: 400px; /* Make it take full width of the right-content */
+    max-width: 1000px;
+    height: auto; /* Allow height to adjust dynamically */
     padding: 20px; /* Add some padding */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d1a825;
-    margin-bottom: 20px;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align items to the left */
+    background-color: #e6e6e6; /* Background color */
+    margin-bottom: 20px; /* Space below the recent post */
+    box-sizing: border-box; /* Include padding in the total width/height */
 }
 
 .socials {
-    width: 100%;
+    width: 150px; /* Make it take full width of the right-content */
+    max-width: 1000px;
     padding: 20px; /* Padding around the container */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(191, 191, 191);
+    align-items: flex-start; /* Align items to the left */
+    background-color: #e6e6e6(191, 191, 191);
+    box-sizing: border-box; /* Include padding in the total width */
 }
+
 
 .title-header {
     font-size: 1.5rem;
@@ -142,18 +191,57 @@ body {
     transform: translateY(-3px); /* Slight lift effect on hover */
 }
 
+@media screen and (max-width: 1370px) {
+    .container {
+        flex-direction: column; /* Stack left and right content vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; /* Make both sections take full width */
+        margin: 0; /* Remove any margins */
+        align-items:center;
+    }
+    .post {
+        display: flex; /* Enable flexbox for alignment */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        margin-left: 0; /* Remove any left margin */
+        width: 100%; /* Ensure the post takes full width */
+        padding: 20px; /* Add padding for spacing */
+        max-height: none; /* Allow the post to expand naturally */
+    }
+    .post-content {
+        width: 100%; /* Make the content take full width */
+        padding: 0; /* Remove extra padding */
+        text-align: center; /* Center-align text */
+    }
+    .recent-post {
+        width: 100%; /* Ensure these sections take full width */
+    }
+    .socials{
+        display: none;
+    }
+    img{
+        display: none; /* Hide images on smaller screens */
+    }
+}
 
 @media screen and (max-width: 800px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align items to the left */
     }
-    .left-content{
-        width: 500px;
+
+    .left-content {
+        width: 100%; /* Make it take full width */
     }
-    .right-content{
-        display: none;
+
+    .right-content {
+        display: none; /* Hide the right content on smaller screens */
     }
-    
 }
 
 @keyframes fadeInAnimation {

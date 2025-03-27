@@ -58,26 +58,38 @@
         <p>Here you will find all the latest news and updates from Miles Life Coaching</p>
     </div>
     <div class="container">
-        <h1>No Post Yet</h1>
-        <!-- <div class="left-content">
+        <div class="left-content">
             <div class="post">
                 <div class="post-image">
-                    <img src="assets/blog1.jpg" alt="Blog Post Image">
+                    <img src="assets/blog1.png" alt="Blog Post Image" style="width: 300px;">
                 </div>
                 <div class="post-content">
-                    <h2>Post Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p>Posted on: <span>January 1, 2024</span></p>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-image">
-                    <img src="assets/blog1.jpg" alt="Blog Post Image">
-                </div>
-                <div class="post-content">
-                    <h2>Post Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p>Posted on: <span>January 1, 2024</span></p>
+                    <h2>When Life Doesn’t Go as Planned: How to Pivot and Thrive</h2>
+                    <p>Life has a way of surprising us, often when we least expect it. Whether it's a sudden career shift, the end of a relationship, or another unexpected challenge, these moments can feel overwhelming. 
+                        But what if they were actually opportunities in disguise?
+                    </p>
+                    <h3>
+                        Embrace Change Instead of Resisting It
+                    </h3>
+                    <p>
+                        Unexpected changes can trigger fear and uncertainty, but resisting them only keeps us stuck. Instead, focus on what you can control and look for hidden opportunities in the situation.
+                    </p>
+                    <h3>
+                        Small Steps Lead to Big Shifts
+                    </h3>
+                    <p>
+                        You don’t have to have all the answers right away. Taking small, intentional steps—like setting new goals, learning new skills, or seeking support—can help you move forward with confidence.
+                    </p>
+                    <h3>
+                        Trust the Process
+                    </h3>
+                    <p>
+                        Uncertainty can feel uncomfortable, but growth often happens outside our comfort zones. When one door closes, another opens—sometimes in ways you never imagined.
+                    </p>
+                    <p>
+                        Are you facing a major life change and unsure of your next step? Let’s work together to turn uncertainty into opportunity. Reach out for a coaching session today!
+                    </p>
+                    <p>Posted on: <span>March 27, 2025</span></p>
                 </div>
             </div>
         </div>
@@ -85,21 +97,37 @@
         <div class="right-content">
             <div class="recent-post">
                 <h3 class="title-header">Recent Post</h3>
-                <p>Post 1</p>
-                <p>Post 2</p>
-                <p>Post 3</p>
-                <p>Post 4</p>
+                <p>When Life Doesn’t Go as Planned: How to Pivot and Thrive</p>
             </div>
             <div class="socials">
                 <h3 class="title-header">Follow Me</h3>
                 <a href="https://www.facebook.com/profile.php?id=61564337651486"><img src="assets/facebook.png"></a>
                 <a href="https://www.linkedin.com/"><img src="assets/linkedin.png"></a>
             </div>
-        </div> -->
+        </div>
     </div>
     <footer class="footer">
         <p>&copy; 2024 Miles Life Coaching All rights reserved.</p>
     </footer>
     <script src="js/nav.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.post').forEach(post => {
+                // Ensure all posts start in the collapsed state
+                post.classList.add('collapsed');
+
+                // Add click event to toggle expanded/collapsed state
+                post.addEventListener('click', () => {
+                    if (post.classList.contains('expanded')) {
+                        post.classList.remove('expanded');
+                        post.classList.add('collapsed');
+                    } else {
+                        post.classList.remove('collapsed');
+                        post.classList.add('expanded');
+                    }
+                });
+            });
+});
+    </script>
 </body>
 </html>

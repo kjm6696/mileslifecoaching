@@ -1,16 +1,37 @@
 body{
     background-color: #f5f5f5;
-    font-family: "Italianno", cursive;
+    /* font-family: "Italianno", cursive; */
     font-weight: 400;
     font-style: normal;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    text-align: center;
+
 }
 
 .container{
-    width: 100%;
-    height: 1000px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.container h1{
+    font-family: "Forum", serif;
+    font-size: 60px;
+    color: #333;
+}
+
+.container h2{
+    font-family: "Forum", serif;
+    font-size: 40px;
+    color: #333;
+}
+
+.container p, h2{
+    font-family: "Forum", serif;
+    font-size: 20px;
 }
 
 @keyframes fadeInAnimation {
