@@ -1,0 +1,91 @@
+.testimonials {
+    padding: 100px 20px;
+    background: #f0f0f0;
+    font-family: 'Forum', serif;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    color: #222;
+    font-family: 'Italianno', cursive;
+    letter-spacing: 2px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-left: 5px solid #555;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card::before {
+    content: "“";
+    font-size: 4em;
+    position: absolute;
+    top: 30px; /* Increase the top value to move it lower */
+    left: 20px;
+    color: #ccc;
+    font-family: serif;
+    line-height: 0.5;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.testimonial-card span {
+    display: block;
+    text-align: right;
+    font-weight: normal;
+    color: #555;
+    font-size: 0.9em;
+    font-family: 'Forum', serif;
+    margin-top: 10px;
+}
+
+.hero {
+    background-color: #d3d3d3;
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 0; /* Ensure no bottom margin */
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    color: #222;
+    font-family: 'Italianno', cursive;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.4em;
+    color: #444;
+    font-family: 'Forum', serif;
+    max-width: 700px;
+    margin: 0 auto;
+}
