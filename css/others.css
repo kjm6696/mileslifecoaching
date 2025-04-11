@@ -1,6 +1,16 @@
+body {
+    background-color: #f5f5f5;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .testimonials {
     padding: 100px 20px;
-    background: #f0f0f0;
+    background: #f5f5f5;
     font-family: 'Forum', serif;
     text-align: center;
 }
@@ -24,7 +34,7 @@
 .testimonial-card {
     background-color: #fff;
     padding: 40px 30px;
-    border-left: 5px solid #555;
+    border-left: 5px solid #C2488E;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     text-align: left;
     font-size: 1.2em;
@@ -44,7 +54,7 @@
     position: absolute;
     top: 30px; /* Increase the top value to move it lower */
     left: 20px;
-    color: #ccc;
+    color: #E35C69;
     font-family: serif;
     line-height: 0.5;
 }
@@ -67,25 +77,24 @@
 }
 
 .hero {
-    background-color: #d3d3d3;
-    padding: 60px 30px;
-    text-align: center;
-    margin-bottom: 0; /* Ensure no bottom margin */
-    border: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #d3d3d3; /* Same grey background */
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+    margin-bottom: 15px; /* Space below the hero */
+    border: none; /* No round corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 .hero h1 {
-    font-size: 3.5em;
-    color: #222;
-    font-family: 'Italianno', cursive;
-    letter-spacing: 1px;
+    font-family: "Italianno", cursive;
+    font-size: 2.5rem; /* Adjust header size */
+    margin-bottom: 10px; /* Space below the header */
+    color: black; /* Header color */
 }
 
 .hero p {
-    font-size: 1.4em;
-    color: #444;
-    font-family: 'Forum', serif;
-    max-width: 700px;
-    margin: 0 auto;
+    font-family: "Forum", serif;
+    font-size: 1.2rem; /* Adjust paragraph size */
+    color: black; /* Paragraph color */
+    margin-bottom: 20px; /* Space below the paragraph */
 }

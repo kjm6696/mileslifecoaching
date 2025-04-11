@@ -38,7 +38,7 @@ body{
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the text */
-  color: #E0B930;
+  color: #E35C69;
   text-align: center;
   font-size: 5rem; /* Adjust font size as needed */
   padding: 1rem;
@@ -49,7 +49,7 @@ body{
 
 .btn {
   font-family: "Forum", serif;
-  background-color: #E0B930; /* Primary button color */
+  background-color: #E35C69   ; /* Primary button color */
   color: white; /* Button text color */
   padding: 12px 24px; /* Padding around the button */
   font-size: 1.9rem; /* Font size */
@@ -67,7 +67,7 @@ body{
 }
 
 .btn:hover {
-  background-color: #d1a825; /* Darker shade on hover */
+  background-color: #8E29C9; /* Darker shade on hover */
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   transform: translateY(-3px); /* Slight lift effect on hover */
 }
@@ -75,4 +75,13 @@ body{
 .btn:active {
   transform: translateY(0); /* Return to normal position when clicked */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 80%; /* Reduce the image width to 80% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+  }
 }

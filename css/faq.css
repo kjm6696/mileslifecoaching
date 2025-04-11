@@ -20,7 +20,7 @@ body {
 }
 
 .faq-question {
-    background-color: #E0B930; /* Button color */
+    background-color: #E35C69; /* Button color */
     color: white;
     padding: 15px;
     width: 100%;
@@ -53,13 +53,13 @@ body {
 }
 
 .faq-question:hover {
-    background-color: #d1a825; /* Darker shade on hover */
+    background-color: #C2488E; /* Darker shade on hover */
 }
 
 .icon {
     margin-right: 10px; /* Space between icon and text */
     font-size: 1.5rem; /* Adjust icon size */
-    color: #E0B930;
+    color: #E35C69;
     background-color: #fff; /* Background color for the icon */
     border-radius: 50%; /* Make the background circular */
     padding: 5px; /* Add some padding around the icon */

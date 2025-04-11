@@ -20,7 +20,7 @@ body {
 h1{
     font-family: "Italianno", cursive;
     font-size: 3.5rem;
-    color: #E0B930;
+    color: #E35C69;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -89,7 +89,7 @@ html {
 #form button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #E0B930;
+    background-color: #E35C69;
     color: white;
     border: none;
     font-size: 18px;
@@ -98,7 +98,7 @@ html {
 }
 
 #form button[type="submit"]:hover {
-    background-color: #d1a825;
+    background-color: #C2488E;
 }
 
 

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: grey 1px solid;
     padding-bottom: 1%;
     flex-direction: column;
@@ -25,16 +24,16 @@
     display: block; /* Make the anchor tag a block element */
     padding: .4rem; /* Add padding to ensure it fills the space */
     box-sizing: border-box; /* Ensure padding doesn't overflow */
-    background-color: #a39f9c;
+    background-color: #E35C69;
     text-align: center;
     word-wrap:break-word;
     font-weight: 500;
     font-size: 1.7rem;
-    color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
 }
 
 .nav a:hover {
-    background: #E0B930;
+    background: #C2488E;
     transition: ease-in-out 0.3s;
 }
 
@@ -45,10 +44,10 @@
 }
 
 .mobile-nav {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Forum', serif;
     display: none;
     flex-direction: column;
-    background-color: #E0B930; 
+    background-color: #E35C69; 
     padding: 2rem 1rem;
     position: fixed; 
     top: 0;
