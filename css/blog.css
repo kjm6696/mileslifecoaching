@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #dfd7e4;
     /* font-family: "Italianno", cursive; */
     font-weight: 400;
     font-style: normal;
@@ -8,8 +8,12 @@ body {
     animation-fill-mode: forwards;
 }
 
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 .hero {
-    background-color: #d3d3d3; /* Same grey background */
+    background-color: #ffffff; /* Same grey background */
     padding: 50px 20px; /* Adjust padding as needed */
     text-align: center; /* Center text */
     margin-bottom: 20px; /* Space below the hero */
@@ -21,7 +25,7 @@ body {
     font-family: "Italianno", cursive;
     font-size: 2.5rem; /* Adjust header size */
     margin-bottom: 10px; /* Space below the header */
-    color: black; /* Header color */
+    color: #8E29C9; /* Header color */
 }
 
 .hero p {
@@ -79,7 +83,7 @@ body {
     flex-direction: row; /* Keep image and text side by side */
     justify-content: flex-start; /* Align items to the left */
     align-items: flex-start; /* Align items to the top */
-    background-color: rgb(233, 233, 233); /* Background color */
+    background-color: #ffffff; /* Background color */
     margin-bottom: 20px; /* Space between posts */
     box-sizing: border-box; /* Include padding in the total width/height */
     gap: 20px; /* Add spacing between the image and content */
@@ -123,7 +127,7 @@ body {
 
 /* Target only the parent div */
 .left-content .post:hover {
-    background-color: #d8d8d8; /* Darker shade on hover */
+    background-color: #f1f1f1; /* Darker shade on hover */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
     transform: translateY(-3px); /* Slight lift effect on hover */
 }
@@ -155,7 +159,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top */
     align-items: flex-start; /* Align items to the left */
-    background-color: #e6e6e6; /* Background color */
+    background-color: #ffffff; /* Background color */
     margin-bottom: 20px; /* Space below the recent post */
     box-sizing: border-box; /* Include padding in the total width/height */
 }
@@ -167,7 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align items to the left */
-    background-color: #e6e6e6(191, 191, 191);
+    background-color: #ffffff(191, 191, 191);
     box-sizing: border-box; /* Include padding in the total width */
 }
 

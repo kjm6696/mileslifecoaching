@@ -1,5 +1,5 @@
 body{
-    background-color: #f5f5f5;
+    background-color: #dfd7e4;
     /* font-family: "Italianno", cursive; */
     font-weight: 400;
     font-style: normal;
@@ -7,7 +7,10 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     text-align: center;
+}
 
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 .container{
@@ -20,7 +23,7 @@ body{
 .container h1{
     font-family: "Forum", serif;
     font-size: 60px;
-    color: #333;
+    color: #8E29C9;
 }
 
 .container h2{

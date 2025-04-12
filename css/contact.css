@@ -1,11 +1,15 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #dfd7e4;
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 .container {
@@ -36,6 +40,7 @@ h1{
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 html {
     scroll-behavior: smooth;

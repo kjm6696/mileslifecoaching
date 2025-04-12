@@ -1,11 +1,15 @@
 body{
-    background-color: #f5f5f5;
+    background-color: #dfd7e4;
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 .container{
@@ -20,7 +24,7 @@ body{
 }
 
 .hero {
-    background-color: #d3d3d3; /* Same grey background */
+    background-color: #ffffff; /* Same grey background */
     padding: 50px 20px; /* Adjust padding as needed */
     text-align: center; /* Center text */
     margin-bottom: 20px; /* Space below the hero */
@@ -32,7 +36,7 @@ body{
     font-family: "Italianno", cursive;
     font-size: 2.5rem; /* Adjust header size */
     margin-bottom: 10px; /* Space below the header */
-    color: black; /* Header color */
+    color: #8E29C9; /* Header color */
 }
 
 .hero p {
@@ -62,7 +66,7 @@ body{
 
 .pricing-card {
     font-family: 'Forum', serif;
-    background-color: #d3d3d3; /* Lighter grey background */
+    background-color: #ffffff; /* Lighter grey background */
     width: 400px;
     height: 400px; /* Taller rectangle */
     padding: 20px;
